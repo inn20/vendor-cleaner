@@ -17,7 +17,7 @@ class CleanerServiceProvider extends ServiceProvider
             $this->commands([
                 Console\ClearUpCommand::class
             ]);
-            $this->publishes([__DIR__.'/../config' => config_path()]);
+            $this->publishes([__DIR__.'/../config' => config_path()], 'vendor-cleaner');
         }
     }
 
