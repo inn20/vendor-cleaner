@@ -39,9 +39,9 @@ class ClearUpCommand  extends Command
      */
     public function handle()
     {
-        $vendorDir = config('vendor-cleaner.dir');
-        $vendorBackupDir = config('vendor-cleaner.backup_dir');
-        $rules = config('vendor-cleaner.rules');
+        $vendorDir = config('vendorcleaner.dir');
+        $vendorBackupDir = config('vendorcleaner.backup_dir');
+        $rules = config('vendorcleaner.rules');
 
         $filesystem = new Filesystem();
 

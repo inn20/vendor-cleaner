@@ -1,6 +1,6 @@
 <?php
 
-$docs = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* UPGRADE* package* demo example examples doc docs readme*';
+$docs = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* UPGRADE* LICENSE* package* demo example examples doc docs readme*';
 $tests = '.travis.yml .scrutinizer.yml phpunit.xml* phpunit.php test tests Tests';
 $standard = "{$docs} {$tests}";
 
@@ -43,15 +43,17 @@ return [
         'symfony/security/Symfony/Component/Security'                => "{$standard}",
         'symfony/security-core/Symfony/Component/Security/Core'      => "{$standard}",
         'symfony/translation/Symfony/Component/Translation'          => "{$standard}",
-        'symfony/polyfill-mbstring'									 => "{$standard}",
-        'symfony/var-dumper'										 => "{$standard}",
-        'symfony/yaml'											 	 => "{$standard}",
+        'symfony/polyfill-mbstring'                                  => "{$standard}",
+        'symfony/var-dumper'                                         => "{$standard}",
+        'symfony/yaml'                                               => "{$standard}",
+        'symfony/http-client-contracts'                              => "{$standard}",
+        'symfony/http-foundation'                                    => "{$standard}",
+        'symfony/mime'                                               => "{$standard}",
 
-        // Default Laravel 4 install
+        // Default Laravel install
         'd11wtq/boris'                          => "{$standard}",
         'filp/whoops'                           => "{$standard}",
         'ircmaxell/password-compat'             => "{$standard}",
-        'jeremeamia/SuperClosure'               => "{$standard}",
         'laravel/framework'                     => "{$standard} build",
         'monolog/monolog'                       => "{$standard}",
         'nesbot/carbon'                         => "{$standard}",
@@ -60,6 +62,7 @@ return [
         'phpseclib/phpseclib'                   => "{$standard}",
         'predis/predis'                         => "{$standard} bin",
         'stack/builder'                         => "{$standard}",
+        'dragonmantank/cron-expression'         => "{$standard}",
         'swiftmailer/swiftmailer'               => "{$standard} build* notes test-suite create_pear_package.php",
 
         // Common packages
@@ -102,6 +105,18 @@ return [
         'twig/twig'                             => "{$standard}",
         'venturecraft/revisionable'             => "{$standard}",
         'willdurand/geocoder'                   => "{$standard}",
+        'alipaysdk/easysdk'                     => "{$standard}",
+        'alibabacloud/tea-fileform'             => "{$standard}",
+        'dcat/laravel-admin'                    => "{$standard} migrations fonts",
+        'dcat/laravel-admin/resources'          => "assets dist lang",
+        'hamcrest/hamcrest-php'                 => "{$standard}",
+        'lcobucci/jwt'                          => "{$standard}",
+        'namshi/jose'                           => "{$standard}",
+        'overtrue/socialite'                    => "{$standard}",
+        'pimple/pimple'                         => "{$standard}",
+        'qiniu/php-sdk'                         => "{$standard}",
+        'sebastian'                             => "{$standard}",
+        'songshenzong/support'                  => "{$standard}",
 
         //AWS SDK
         'aws/aws-sdk-php'						=> "{$standard}",

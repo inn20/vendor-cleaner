@@ -17,6 +17,7 @@ class CleanerServiceProvider extends ServiceProvider
             $this->commands([
                 Console\ClearUpCommand::class
             ]);
+            $this->publishes([__DIR__.'/../config' => config_path()]);
         }
     }
 
@@ -27,7 +28,7 @@ class CleanerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config.php', 'vendor-cleaner');
+        //
     }
 
 }
