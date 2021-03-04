@@ -40,7 +40,6 @@ class ClearUpCommand  extends Command
     public function handle()
     {
         $vendorDir = config('vendorcleaner.dir');
-        $vendorBackupDir = config('vendorcleaner.backup_dir');
         $rules = config('vendorcleaner.rules');
 
         $filesystem = new Filesystem();
@@ -63,11 +62,11 @@ class ClearUpCommand  extends Command
                     foreach($files as $file){
                         if($file->isDir()){
                             //$filesystem->deleteDirectory($file);
-                            $filesystem->copyDirectory($file, $vendorBackupDir);
+                            //$filesystem->copyDirectory($file, $vendorBackupDir);
                             $filesystem->deleteDirectory($file);
                         }elseif($file->isFile()){
-                            //$filesystem->delete($file);
-                            $filesystem->move($file, $vendorBackupDir);
+                            $filesystem->delete($file);
+                            //$filesystem->move($file, $vendorBackupDir);
                         }
                     }
                 }catch(\Exception $e){
