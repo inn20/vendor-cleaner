@@ -1,7 +1,7 @@
 <?php
 
 $docs = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* UPGRADE* LICENSE* package* demo example examples doc docs readme*';
-$tests = '.travis.yml .scrutinizer.yml phpunit.xml* phpunit.php test tests Tests';
+$tests = '.travis.yml .scrutinizer.yml phpunit.xml* phpunit.php test Test tests Tests';
 $standard = "{$docs} {$tests}";
 
 return [
@@ -48,6 +48,9 @@ return [
         'symfony/http-client-contracts'                              => "{$standard}",
         'symfony/http-foundation'                                    => "{$standard}",
         'symfony/mime'                                               => "{$standard}",
+        'symfony/psr-http-message-bridge'                            => "{$standard}",
+        'symfony/dom-crawler'                                        => "{$standard}",
+        'symfony/console'                                            => "{$standard}",
 
         // Default Laravel install
         'd11wtq/boris'                          => "{$standard}",
@@ -114,8 +117,19 @@ return [
         'overtrue/socialite'                    => "{$standard}",
         'pimple/pimple'                         => "{$standard}",
         'qiniu/php-sdk'                         => "{$standard}",
-        'sebastian'                             => "{$standard}",
+        'sebastian/code-unit-reverse-lookup'    => "{$standard}",
+        'sebastian/comparator'                  => "{$standard}",
+        'sebastian/diff'                        => "{$standard}",
+        'sebastian/environment'                 => "{$standard}",
+        'sebastian/exporter'                    => "{$standard}",
+        'sebastian/global-state'                => "{$standard}",
+        'sebastian/object-enumerator'           => "{$standard}",
+        'sebastian/object-reflector'            => "{$standard}",
+        'sebastian/recursion-context'           => "{$standard}",
+        'sebastian/resource-operations'         => "{$standard}",
+        'sebastian/type'                        => "{$standard}",
         'songshenzong/support'                  => "{$standard}",
+        'spatie/eloquent-sortable'              => "{$standard}",
 
         //AWS SDK
         'aws/aws-sdk-php'						=> "{$standard}",
