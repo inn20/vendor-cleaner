@@ -107,7 +107,7 @@ return [
         'twig/twig'                             => "{$standard}",
         'venturecraft/revisionable'             => "{$standard}",
         'willdurand/geocoder'                   => "{$standard}",
-        'alipaysdk/easysdk'                     => "{$standard}",
+        'alipaysdk/easysdk'                     => "{$standard} csharp go java kernel tea APIDoc.md",
         'alibabacloud/tea-fileform'             => "{$standard}",
         'dcat/laravel-admin'                    => "{$standard} migrations fonts",
         'dcat/laravel-admin/resources'          => "assets dist lang",
