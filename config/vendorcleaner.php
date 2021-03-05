@@ -111,6 +111,8 @@ return [
         'alibabacloud/tea-fileform'             => "{$standard}",
         'dcat/laravel-admin'                    => "{$standard} migrations fonts",
         'dcat/laravel-admin/resources'          => "assets dist lang",
+        'encore/laravel-admin'                  => "{$standard} migrations docs",
+        'encore/laravel-admin/resources'        => "assets lang",
         'hamcrest/hamcrest-php'                 => "{$standard}",
         'lcobucci/jwt'                          => "{$standard}",
         'namshi/jose'                           => "{$standard}",
